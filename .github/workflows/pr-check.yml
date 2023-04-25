@@ -27,7 +27,6 @@ jobs:
         run: cd .. && sudo /usr/bin/git clone https://github.com/${{ github.repository }} main && cd -
       - name: Check if the PR is acceptable
         run: |
-          diff -q ./tests/ ../main/tests 
           diff -q ./.github/ ../main/.github
       - name: Copy test suites from main repo to PR
         run: cp ../main/tests/*.* tests/

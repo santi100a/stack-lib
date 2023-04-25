@@ -1,80 +1,50 @@
-# Template for my NPM libraries
-
-Hello, everyone! This is a template repo for my libraries.
-You'll find a readme template inside this file.
-
-In order for the CI workflow's publishing jobs to execute successfully, you must have two
-Actions secrets set up -- `NPM_AUTH_TOKEN` and `GPR_AUTH_TOKEN`.
-They're set to a defaullt dummy value "your-token-here".
-You might want to check the [YAML Actions workflow](.github/workflows/main.yml) for hints
-and information you may want or need to know.
-
-## Template features
-
-- License (both template contents and code built from it): MIT.
-- Code of conduct: adapted from the Contributor Covenant.
-- Package manager: Yarn 1.22.19.
-- Automatic testing: Jest.
-- TypeScript 4.9.5 for built-in type definitions and support for compiling to ES3.
-- ESLint and Prettier.
-- A pre-commit hook for prettifying and validation, so you don't get embarrased if your PR's CI fails :)
-- Security policy and contribution guidelines.
-
-- Self-made scripts for verification of package.json and creation of an ESM wrapper
-  around TypeScript's CommonJS output to allow for usage within both CJS and ESM projects.
-
 <!-- START README TEMPLATE -->
 <!-- 
 * Make sure to replace ALL placeholders.
 ! The readme will be broken otherwise!
 -->
 
-<!-- # Library Name -->
+# Santi's Small Stack
 <!-- Badges -->
-<!-- Example: 
+
 [![Build Status][workflow badge]][repo actions]
 [![npm homepage][npm badge]][npm home]
 [![GitHub stars][stars badge]][repo url]
 [![License][license badge]][repo url]
 [![Bundlephobia stats][bundlephobia badge]][bundlephobia url]
 
-[workflow badge]: https://github.com/<author>/<repo>/actions/workflows/main.yml/badge.svg
-[npm badge]: https://img.shields.io/npm/v/@<author>/<repo>
-[stars badge]: https://img.shields.io/github/stars/<author>/<repo>.svg
-[license badge]: https://img.shields.io/github/license/<author>/<repo>.svg
-[bundlephobia badge]: https://img.shields.io/bundlephobia/min/@<author>/<repo>
+[workflow badge]: https://github.com/santi100a/stack-lib/actions/workflows/main.yml/badge.svg
+[npm badge]: https://img.shields.io/npm/v/@santi100/stack-lib
+[stars badge]: https://img.shields.io/github/stars/santi100a/stack-lib.svg
+[license badge]: https://img.shields.io/github/license/santi100a/stack-lib.svg
+[bundlephobia badge]: https://img.shields.io/bundlephobia/min/@santi100/stack-lib
 
-[npm home]: https://npmjs.org/package/@<author>/<repo>
-[repo actions]: https://github.com/<author>/<repo>/actions
-[repo url]: https://github.com/<author>/<repo>
-[bundlephobia url]: https://bundlephobia.com/package/@<author>/<repo>@latest
+[npm home]: https://npmjs.org/package/@santi100/stack-lib
+[repo actions]: https://github.com/santi100a/stack-lib/actions
+[repo url]: https://github.com/santi100a/stack-lib
+[bundlephobia url]: https://bundlephobia.com/package/@santi100/stack-lib@latest
 -->
 
-<!-- Bullet points -->
-<!-- Example:
 - 🚀 Lightweight and fast[^](#disclaimers)
 - 👴 ES3-compliant[*](#disclaimers)
 - 💻 Portable between the browser and Node.js
--->
+- 📘 Comes with built-in TypeScript definitions
 
-<!-- ## What's this? -->
-<!-- Description -->
+## What's this?
+
+This is an implementation of the stack data structure in TypeScript.
+It aims to be complete, yet versatile, portable, lightweight and easy to use.
 
 <!-- Mentions, inspirations -->
 
-<!-- ## Installation -->
-<!-- Installation steps and/or commands -->
-<!-- Example:
-- Via NPM: `npm install @<author>/<repo>`
-- Via Yarn: `yarn add @<author>/<repo>`
-- Via PNPM: `pnpm install @<author>/<repo>`
--->
+- Via NPM: `npm install @santi100/stack-lib`
+- Via Yarn: `yarn add @santi100/stack-lib`
+- Via PNPM: `pnpm install @santi100/stack-lib`
 
-<!-- ## API -->
+## API
+
+Coming soon! Check the JSDoc to get a look at what's coming to this section.
 <!--
-* If a class/function/variable is deprecated, you must cross it out by wrapping the 
-* `<class/function/variable prototype/definition/type def>;` with tildes, like this:
-* ~~`<class/function/variable prototype/definition/type def>;`~~ (deprecated [since <version>])
 
 - `<class/function/variable prototype/definition/type def>;` ([since <version if not first version>]) ([deprecated [since <version>]]) <description>
    | Name       |     Type    | Description        | Optional? | Default                                |
