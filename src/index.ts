@@ -10,7 +10,7 @@ export type StackReducerCb<T, R = unknown> = (
 	acc: T,
 	cur: T,
 	idx: number,
-	stack: Stack<T> 
+	stack: Stack<T>
 ) => R;
 /**
  * Main class for this data structure.

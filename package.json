@@ -19,7 +19,8 @@
   "description": "Santi's Small Stack: Imagine a pile of dishes!",
   "keywords": ["stack", "es3", "library"],
   "repository": {
-    "url": "https://github.com/santi100a/stack-lib"
+    "url": "https://github.com/santi100a/stack-lib",
+    "type": "git"
   },
   "scripts": {
     "build": "tsc",
