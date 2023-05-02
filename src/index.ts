@@ -333,6 +333,6 @@ export class Stack<T = unknown> {
 	copy() {
 		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 		// @ts-ignore
-		// return new Stack(...this.__items); 
+		// return new Stack(...this.__items);
 	}
 }
